@@ -1,0 +1,69 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+nav, nav div, .jumbotron, .gallery, .card, .card div, footer {
+    display: flex;
+}
+
+nav  {
+    justify-content: flex-end;
+}
+
+nav {
+    background-color: darkgray;
+}
+nav div {
+    width: 100px;
+    justify-content: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.jumbotron, .card div {
+    align-items: center;
+    justify-content: center;
+}
+.jumbotron {
+    background-image: url(http://static.asiawebdirect.com/m/phuket/portals/phuket-com/homepage/island/naiharn-beach/pagePropertiesImage/naiharn-beach.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.gallery, .card {
+    flex-flow: row wrap;
+}
+
+.gallery div {
+    flex: 1 1 400px ;
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+}
+
+.card div {
+    flex: 1 1 200px;
+    height: 200px;
+    transition: 1s cubic-bezier(0, -0.04, 0.58, 1);
+}
+
+.card div:nth-child(2n), .card:hover div:nth-child(2n+1) {
+    background-color: red;
+}
+
+.card:hover div:nth-child(2n) {
+    background-color: white;
+}
+
+footer {
+    justify-content: space-around;
+}
+
+
